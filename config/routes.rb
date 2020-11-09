@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get '/ask', to: 'questions#ask' # '/ask' IS THE URL, questions is the controller file and ask the methods in the controller file
+  get '/answer', to: 'questions#answer' # '/answer' IS THE URL 
+  # Remember the name of the controller file is only the firs word before the under score
 end
